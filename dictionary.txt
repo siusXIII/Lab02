@@ -1,3 +1,5 @@
+paperi carta
+pateri erba
 kissa gatto
 koira cane
 hevonen cavallo
@@ -105,4 +107,3 @@ kirja libro
 lehti rivista
 sanomalehti giornale
 kynä penna
-paperi carta
