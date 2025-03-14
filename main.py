@@ -1,6 +1,7 @@
 import translator as tr
 
-t = tr.Translator("dictionary.txt")
+t = tr.Translator()
+t.loadDictionary()
 
 
 while(True):
@@ -26,6 +27,6 @@ while(True):
             print(f"La traduzione di {p} è: {t.handleTranslate(p)}")
         pass
     elif int(txtIn) == 4:
-        print(t.loadDictionary())
+        t.printAll()
     elif int(txtIn) == 5:
         break
