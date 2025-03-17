@@ -2,8 +2,8 @@ from dictionary import Dictionary
 
 class Translator:
 
-    def __init__(self,diz):
-        self.d = Dictionary(diz)
+    def __init__(self):
+        self.d = Dictionary()
 
     def printMenu(self):
         print("1. Aggiungi nuova parola")
@@ -14,7 +14,7 @@ class Translator:
 
 
     def loadDictionary(self):
-        return self.d.dizionario
+        self.d.loadDictionary()
 
 
     def handleAdd(self, entry):
@@ -33,3 +33,6 @@ class Translator:
     def handleWildCard(self,query):
         # query is a string with a ? --> <par?la_aliena>
         return self.d.translateWordWildCard(query)
+
+    def printAll(self):
+        self.d.printAll()
